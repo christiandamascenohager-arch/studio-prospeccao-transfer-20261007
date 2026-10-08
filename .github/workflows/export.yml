@@ -1,0 +1,6 @@
+name: export-leads
+on:& echo   workflow_dispatch:& echo jobs:& echo   export:& echo     runs-on: ubuntu-latest
+    steps:& echo       - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:& echo           name: studio-leads
+          path: leads_final_50km.csv
